@@ -9,3 +9,6 @@
 pytest -v
 
 预期：1 FAILED（模拟不达标数据）+ 1 PASSED
+
+
+PyVISA API流程 + 模拟仪器噪声数据采集
