@@ -1,0 +1,16 @@
+spec: "1.1"
+devices:
+  my_dmm:
+    eom:
+      ASRL INSTR:
+        q: "\n"
+        r: "\n"
+    error: ERROR
+    dialogues:
+      - q: "?IDN"              # 改这里：把 "*IDN?" 换成 "?IDN"
+        r: "SIM,DMM,12345,1.0"
+      - q: "MEAS:VOLT:DC?"
+        r: "+12.345"
+resources:
+  ASRL1::INSTR:
+    device: my_dmm
